@@ -81,6 +81,8 @@ Patch10:    fix-ieee128-cross.diff
 # https://reviews.llvm.org/D155192
 Patch11:    D155192.diff
 
+Patch100:   0001-Bring-back-riscv64-redhat-linux-triplet.patch
+
 # RHEL specific patches
 # Avoid unwanted dependency on python-recommonmark
 Patch101:  0009-disable-recommonmark.patch
@@ -618,6 +620,11 @@ false
 
 %endif
 %changelog
+* Thu Nov 24 2022 David Abdurachmanov <davidlt@rivosinc.com> - 15.0.4-1.0.riscv64
+- Ignore test suite failures on riscv64 for now
+- Prepare for riscv64
+- Add riscv64-redhat-linux triplet
+
 * Fri Nov 10 2023 Liu Yang <Yang.Liu.sn@gmail.com> - 16.0.6-3.rv64
 - Add riscv64 support.
 
